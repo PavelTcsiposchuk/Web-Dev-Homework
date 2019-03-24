@@ -31,28 +31,29 @@
 	</div>
 	<div>
 		<h3>Добавить</h3>
-		@*<form method="post" action="@Url.Action("Add", "HomeController")">*@
 		<form method="post" action="/Home/Add">
-		<table>
-			<tr>
-				<td><p>Введите Id </p></td>
-				<td><input type="text" name="Id" /> </td>
-			</tr>
-			<tr>
-				<td><p>Введите name :</p></td>
-				<td>
-					<input type="text" name="NameFighter" />
-				</td>
-			</tr>
-			<tr>
-				<td><p>Введите rate :</p></td>
-				<td>
-					<input type="text" name="Rate" />
-				</td>
-			</tr>
-			<tr><td><input type="submit" value="Отправить" /> </td><td></td></tr>
-		</table>
+			<table>
+				<tr>
+					<td><p>Введите Id </p></td>
+					<td><input type="text" name="Id" /> </td>
+				</tr>
+				<tr>
+					<td><p>Введите name :</p></td>
+					<td>
+						<input type="text" name="NameFighter" />
+					</td>
+				</tr>
+				<tr>
+					<td><p>Введите rate :</p></td>
+					<td>
+						<input type="text" name="Rate" />
+					</td>
+				</tr>
+				<tr><td><input type="submit" value="Отправить" /> </td><td></td></tr>
+			</table>
 		</form>
 	</div>
+	
+
 </body>
 </html>

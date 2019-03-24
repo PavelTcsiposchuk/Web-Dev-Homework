@@ -38,15 +38,6 @@ namespace Web_Dev_Homework.Controllers
             ViewBag.Bets = Bets;
             return View("~/Views/Home/Index.cshtml");
         }
-        [HttpPut]
-        public FilePathResult SaveFile()
-        {
-
-            RequestWriteObj = new BetInfoForFile(Server.HtmlEncode(Request.RequestType), GetIPAddress(), Request.Url.ToString());
-            
-            ViewBag.Bets = Bets;
-            return 
-        }
         [HttpPost]
         public ActionResult Add(Bet bet)
         {
